@@ -1,0 +1,626 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    color:lightslategray;
+    background: #faf9f7;
+}
+
+/* Navigation */
+
+header {
+    background: #faf9f7;g
+    padding: 22px 8%;
+    border-bottom: 1px solid #e5e2de;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero */
+
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 70px 8%;
+    background:#eeebe6;
+}
+
+.hero-content {
+    width: 50%;
+    max-width: 600px;
+}
+
+.small-title {
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+
+.hero-image {
+    width: 42%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+   background: #2f2f2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Featured Works */
+
+.featured {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.image-box {
+    height: 220px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+}
+.card h3 {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #333;
+    color: white;
+}
+/* About Page */
+
+.about {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 8%;
+}
+
+.about-image {
+    width: 45%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.profile-box {
+    height: 400px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.about-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Skills */
+
+.skills {
+    padding: 70px 8%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.skills h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill {
+    width: 30%;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+.skill h3 {
+    margin-bottom: 15px;
+}
+/* My Works Page */
+
+.works {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.works h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.works > p {
+    margin-bottom: 40px;
+}
+
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.work-card {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #ddd;
+    transition: 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-8px);
+}
+
+.work-image {
+    height: 220px;
+    background: #ddd;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.work-card h3 {
+    margin-bottom: 10px;
+}
+
+.work-card p {
+    line-height: 1.6;
+}
+/* Gallery Page */
+
+.gallery {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.gallery > p {
+    margin-bottom: 40px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+/* Contact Page */
+
+.contact {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 8%;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.details p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.social {
+    margin-top: 25px;
+}
+
+.social h3 {
+    margin-bottom: 12px;
+}
+
+.social a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social a:hover {
+    color: #777;
+}
+.contact-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+
+.contact-form button {
+    padding: 14px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+/* Smooth Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Hover Effect */
+
+nav ul li a {
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #777;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #333;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Button Hover */
+
+.btn {
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Card Hover */
+
+.card,
+.work-card,
+.skill {
+    transition: 0.3s;
+}
+
+.card:hover,
+.work-card:hover,
+.skill:hover {
+    transform: translateY(-8px);
+}
+
+/* Image Hover */
+
+.image-box {
+    overflow: hidden;
+}
+
+.image-box:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/* Contact Button */
+
+.contact-form button {
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Hero */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+        gap: 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* Featured Works */
+
+    .featured {
+        padding: 50px 5%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* About */
+
+    .about {
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+
+    /* Skills */
+
+    .skills {
+        padding: 50px 5%;
+    }
+
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    /* My Works */
+
+    .works {
+        padding: 50px 5%;
+    }
+
+    .work-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Gallery */
+
+    .gallery {
+        padding: 50px 5%;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+
+    .contact {
+        flex-direction: column;
+        padding: 50px 5%;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
